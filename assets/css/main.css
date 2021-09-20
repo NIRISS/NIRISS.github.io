@@ -1243,6 +1243,14 @@ input[type="radio"] + label:before {
     width: 100%; }
     .image.main img {
       width: 100%; }
+   
+  .image.canucs {
+    float:left;
+    padding: 0 0 1em 1.5em;
+    top: 0.25em; max-width: 40%;  }
+  image.canucs img {
+      width: 100%; }
+
 
 a.image {
   overflow: hidden; }
