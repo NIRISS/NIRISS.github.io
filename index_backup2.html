@@ -11,14 +11,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-
-		<script src="jquery.js"></script>
-		<script>
-		$(function(){
-		 $("#IC2").load("sidebar.html");
-		});
-		</script>
-
 	</head>
 	<body class="is-preload">
 
@@ -29,11 +21,13 @@
 					<div id="main">
 						<div class="inner">
 
+							
+
 							<!-- Banner -->
 								<section id="banner">
-
+                                    
 									<div class="content">
-                                        <br /> <br /> <br />
+                                        <br /> <br /> <br /> 
 										<header>
 											<!--<h1>CANUCS</h1> -->
                                             <img src="images/canucs_logo.png" width="270" alt="CANUCS" />
@@ -45,20 +39,20 @@
 											<li><a href="http://www.exoplanetes.umontreal.ca/wp-content/uploads/2018/11/ChrisWillott.pdf" class="button">Introduction</a></li>
                                             <li><a href="https://www.cosmos.esa.int/documents/1374594/1376130/19d1_ESAC_2017_Guide_Science_Case_3_4.pdf" class="button">Observing</a></li>
                                             <li><a href="https://www.stsci.edu/cgi-bin/get-proposal-info?id=1208&observatory=JWST" class="button">GTO 1208</a></li>
-
-
+                                            
+                                            
 										</ul>
-                                         <br /> <br /> <br />
+                                         <br /> <br /> <br /> 
 									</div>
 									<span class="image">
 										<img src="images/CANUCS_webpage.001.jpeg" alt="" />
 									</span>
 								</section>
 
+						
 
 
-
-
+		
 
 								<!-- Section -->
 								<section>
@@ -109,17 +103,17 @@
 
 
 									<!-- Box -->
-
+												
 													<div class="box">
 														<p>The <b>CA</b>nadian <b>N</b>IRISS <b>U</b>nbiased <b>C</b>luster <b>S</b>urvey (CANUCS) is a component of the NIRISS Guaranteed Time Observations survey that will devote 200 hours to study galaxies lensed by five massive foreground galaxy clusters.  More information to come; targets and observation strategy available at <a href="http://www.stsci.edu/jwst/observing-programs/program-information?id=1208">JWST-GTO 1208</a>.</p>
 													</div>
 
-
+								
 									<div class="table-wrapper">
 														<table>
 															<thead>
 																<tr>
-
+																
 																	<th>Target</th>
 																	<th>RA</th>
 																	<th>Dec</th>
@@ -127,7 +121,7 @@
 															</thead>
 															<tbody>
 																<tr>
-
+																	
 																	<td><a href="https://s3.amazonaws.com/grizli-v1/Pipeline/j023952m0135/Prep/j023952m0135.summary.html" class="button">Abell 370</a></td>
 																	<td>02:39:54.1 </td>
 																	<td>-01:34:34</td>
@@ -156,7 +150,7 @@
 															<tfoot>
 																<tr>
 																	<td colspan="2"></td>
-
+																	
 																</tr>
 															</tfoot>
 														</table>
@@ -166,7 +160,7 @@
 
 
 								<!-- Image -->
-
+													
 													<span class="image fit"><img src="images/news_image1.jpg" alt="" /></span>
 													<div class="box alt">
 														<div class="row gtr-50 gtr-uniform">
@@ -187,24 +181,21 @@
 
 									<section id="photos"></section>
 
-
+							
 
 						</div>
 					</div>
 
 				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
 
-				<div id="sidebar">
-				  <div class="inner">
-
-				    <!-- Search -->
-				      <section id="search" class="alt">
-				        <form method="post" action="#">
-				          <input type="text" name="query" id="query" placeholder="Search" />
-				        </form>
-				      </section>
-
-
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
 
 							<!-- Menu -->
 								<nav id="menu">
@@ -219,29 +210,65 @@
 											<ul>
 												<li><a href="fields.html">Fields</a></li>
 												<!-- <li><a href="ancillary.html">Ancillary data</a></li> -->
-																								<li><a href="relprop.html">Related Proposals</a></li>
+                                                <li><a href="relprop.html">Related Proposals</a></li>
 											</ul>
 										</li>
-																				<li><a href="data.html">Data Releases</a></li>
+                                        <li><a href="data.html">Data Releases</a></li>
 										<li><a href="codebase.html">Codebase</a></li>
-																				<li><a href="pub.html">Publications</a></li>
-																				<li><a href="members.html">Members</a></li>
-																				<li><a href="news.html">News</a></li>
-																				<!-- <li><a href="contact.html">Contact us</a></li> -->
+                                        <li><a href="pub.html">Publications</a></li>
+                                        <li><a href="members.html">Members</a></li>
+                                        <li><a href="news.html">News</a></li>
+                                        <!-- <li><a href="contact.html">Contact us</a></li> -->
 									</ul>
 								</nav>
 
-							 <div id="IC2"></div>
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>News &amp EPO</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a href="https://asc-csa.gc.ca/eng/blog/2021/09/10/studying-the-first-galaxies.asp" class="image"><img src="images/news_image3.jpg" alt="" /></a>
+											<p>Studying the first galaxies</p>
+										</article>
+										<article>
+											<a href="https://www.asc-csa.gc.ca/eng/satellites/jwst/programs.asp" class="image"><img src="images/news_image2.jpg" alt="" /></a>
+											<p>Canadian science observation programs for the Webb Telescope</p>
+										</article>
+										<article>
+											<a href="https://www.nasa.gov/feature/goddard/2021/nasa-s-webb-will-use-quasars-to-unlock-the-secrets-of-the-early-universe" class="image"><img src="images/news_image1.png" alt="" /></a>
+											<p>NASA’s Webb Will Use Quasars to Unlock the Secrets of the Early Universe</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="news.html" class="button">More</a></li>
+									</ul>
+								</section>
 
-				<!-- Footer -->
-		      <footer id="footer">
-		        <p class="copyright">&copy; CANUCS (2021). All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>. Lamiya Mowla &amp Kartheik Iyer.</p>
-		      </footer>
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Contact us</h2>
+									</header>
+									<p>Interested in using the CANUCS data or contributing to the team? Get in touch with us:</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="mailto:chris.willott@nrc.ca">Email</a></li>
+                                   <!--      <li class="icon solid fa-envelope"><a href="#">email2@untitled.tld</a></li>
+										<li class="icon solid fa-phone">(000) 000-0000</li>
+				 -->						<!-- <li class="icon solid fa-home">1234 Somewhere Road #8254<br />Nashville, TN 00000-0000</li> -->
+									</ul>
+								</section>
 
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; CANUCS (2021). All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>. Lamiya Mowla &amp Kartheik Iyer.</p>
+								</footer>
 
-				  </div>
-				</div>
-		</div>
+						</div>
+					</div>
+
+			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
