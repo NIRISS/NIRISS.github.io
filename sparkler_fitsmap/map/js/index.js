@@ -1,14 +1,12 @@
 // Image layers ================================================================
+const col_ss_f090w_f150w_f200w = L.tileLayer("col_ss_f090w_f150w_f200w/{z}/{y}/{x}.png", { attribution:"<a href='https://github.com/ryanhausen/fitsmap'>FitsMap</a>", minZoom: 0, maxZoom: 10, maxNativeZoom: 5 });
+const col_ss_f277w_f356w_f444w = L.tileLayer("col_ss_f277w_f356w_f444w/{z}/{y}/{x}.png", { attribution:"<a href='https://github.com/ryanhausen/fitsmap'>FitsMap</a>", minZoom: 0, maxZoom: 10, maxNativeZoom: 5 });
 const ss_f090w_sci_20mas = L.tileLayer("ss_f090w_sci_20mas/{z}/{y}/{x}.png", { attribution:"<a href='https://github.com/ryanhausen/fitsmap'>FitsMap</a>", minZoom: 0, maxZoom: 10, maxNativeZoom: 5 });
 const ss_f150w_sci_20mas = L.tileLayer("ss_f150w_sci_20mas/{z}/{y}/{x}.png", { attribution:"<a href='https://github.com/ryanhausen/fitsmap'>FitsMap</a>", minZoom: 0, maxZoom: 10, maxNativeZoom: 5 });
 const ss_f200w_sci_20mas = L.tileLayer("ss_f200w_sci_20mas/{z}/{y}/{x}.png", { attribution:"<a href='https://github.com/ryanhausen/fitsmap'>FitsMap</a>", minZoom: 0, maxZoom: 10, maxNativeZoom: 5 });
 const ss_f277w_sci_40mas = L.tileLayer("ss_f277w_sci_40mas/{z}/{y}/{x}.png", { attribution:"<a href='https://github.com/ryanhausen/fitsmap'>FitsMap</a>", minZoom: 0, maxZoom: 10, maxNativeZoom: 5 });
 const ss_f356w_sci_40mas = L.tileLayer("ss_f356w_sci_40mas/{z}/{y}/{x}.png", { attribution:"<a href='https://github.com/ryanhausen/fitsmap'>FitsMap</a>", minZoom: 0, maxZoom: 10, maxNativeZoom: 5 });
-const ss_f435w_sci_40mas = L.tileLayer("ss_f435w_sci_40mas/{z}/{y}/{x}.png", { attribution:"<a href='https://github.com/ryanhausen/fitsmap'>FitsMap</a>", minZoom: 0, maxZoom: 10, maxNativeZoom: 5 });
 const ss_f444w_sci_40mas = L.tileLayer("ss_f444w_sci_40mas/{z}/{y}/{x}.png", { attribution:"<a href='https://github.com/ryanhausen/fitsmap'>FitsMap</a>", minZoom: 0, maxZoom: 10, maxNativeZoom: 5 });
-const ss_f606w_sci_40mas = L.tileLayer("ss_f606w_sci_40mas/{z}/{y}/{x}.png", { attribution:"<a href='https://github.com/ryanhausen/fitsmap'>FitsMap</a>", minZoom: 0, maxZoom: 10, maxNativeZoom: 5 });
-const ss_f090w_f150w_f200w = L.tileLayer("ss_f090w_f150w_f200w/{z}/{y}/{x}.png", { attribution:"<a href='https://github.com/ryanhausen/fitsmap'>FitsMap</a>", minZoom: 0, maxZoom: 10, maxNativeZoom: 5 });
-const ss_f277w_f356w_f444w = L.tileLayer("ss_f277w_f356w_f444w/{z}/{y}/{x}.png", { attribution:"<a href='https://github.com/ryanhausen/fitsmap'>FitsMap</a>", minZoom: 0, maxZoom: 10, maxNativeZoom: 5 });
 
 // Marker layers ===============================================================
 
@@ -21,11 +19,11 @@ const map = L.map("map", {
     crs: L.CRS.FitsMap,
     minZoom: 0,
     preferCanvas: true,
-    layers: [ss_f090w_sci_20mas]
+    layers: [col_ss_f090w_f150w_f200w]
 });
 
 const layerControl = L.control.layers(
-    {"ss_f090w_sci_20mas":ss_f090w_sci_20mas,"ss_f150w_sci_20mas":ss_f150w_sci_20mas,"ss_f200w_sci_20mas":ss_f200w_sci_20mas,"ss_f277w_sci_40mas":ss_f277w_sci_40mas,"ss_f356w_sci_40mas":ss_f356w_sci_40mas,"ss_f435w_sci_40mas":ss_f435w_sci_40mas,"ss_f444w_sci_40mas":ss_f444w_sci_40mas,"ss_f606w_sci_40mas":ss_f606w_sci_40mas,"ss_f090w_f150w_f200w":ss_f090w_f150w_f200w,"ss_f277w_f356w_f444w":ss_f277w_f356w_f444w},
+    {"col_ss_f090w_f150w_f200w":col_ss_f090w_f150w_f200w,"col_ss_f277w_f356w_f444w":col_ss_f277w_f356w_f444w,"ss_f090w_sci_20mas":ss_f090w_sci_20mas,"ss_f150w_sci_20mas":ss_f150w_sci_20mas,"ss_f200w_sci_20mas":ss_f200w_sci_20mas,"ss_f277w_sci_40mas":ss_f277w_sci_40mas,"ss_f356w_sci_40mas":ss_f356w_sci_40mas,"ss_f444w_sci_40mas":ss_f444w_sci_40mas},
     {}
 ).addTo(map);
 
@@ -33,7 +31,7 @@ const layerControl = L.control.layers(
 
 
 // Map event setup =============================================================
-ss_f090w_sci_20mas.on("load", () => {
+col_ss_f090w_f150w_f200w.on("load", () => {
     document.getElementById("loading-screen").style.visibility = "hidden";
     document.getElementById("map").style.visibility = "visible";
 });
