@@ -1,5 +1,5 @@
 const is_ra_dec = 1;
-const crpix = [1462.5, 1279.5];
+const crpix = [2587.5, 2404.5];
 const crval = [110.83403, -73.45429];
 const cdmatrix = [[-5.5555555555555e-06, 0.0], [0.0, 5.5555555555555e-06]];
 
